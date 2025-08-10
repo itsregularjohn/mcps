@@ -1,0 +1,29 @@
+{
+  "name": "jp-mcps",
+  "version": "1.0.0",
+  "private": true,
+  "license": "UNLICENSED",
+  "description": "JP's personal collection of Model Context Protocol (MCP) modules",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "deno run -A src/index.ts",
+    "monitor": "npx @modelcontextprotocol/inspector bun run -A src/index.ts",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\""
+  },
+  "dependencies": {
+    "@googleapis/sheets": "^5.0.5",
+    "@googleapis/tasks": "^7.0.3",
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "execa": "^9.5.2",
+    "google-auth-library": "^9.4.1",
+    "gray-matter": "^4.0.3",
+    "openai": "^4.73.1",
+    "trash": "^9.0.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "pnpm@10.10.0+sha512.d615db246fe70f25dcfea6d8d73dee782ce23e2245e3c4f6f888249fb568149318637dca73c2c5c8ef2a4ca0d5657fb9567188bfab47f566d1ee6ce987815c39"
+}
